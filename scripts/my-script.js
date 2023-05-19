@@ -49,13 +49,15 @@ function openClose(targetArea, targetButton) {
   let button = document.querySelector(`${targetButton}`);
   let aboutStyle = window.getComputedStyle(aboutMenu, null);
   let displayValue = aboutStyle.getPropertyValue("display");
+  let rt = document.querySelector(":root");
   if (displayValue === "none") {
     aboutMenu.style.display = "block";
-    button.style.color = "#eb00ff";
+    let clickedColor =
+      getComputedStyle(rt).getPropertyValue("--clicked-button");
+    button.style.color = clickedColor;
     return 1;
   } else {
     aboutMenu.style.display = "none";
-    let rt = document.querySelector(":root");
     let originalColor = getComputedStyle(rt).getPropertyValue("--blue");
     button.style.color = originalColor;
     return 0;

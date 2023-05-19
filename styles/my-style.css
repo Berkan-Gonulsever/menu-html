@@ -24,6 +24,7 @@ body {
   --black: #000000;
   --dark-green: #032900;
   --footer-gray: rgba(79, 100, 96, 0.4);
+  --clicked-button: #eb00ff;
 }
 
 .header-hero {
