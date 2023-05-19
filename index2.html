@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gülbahçe Burger</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .main-header {
+        background-color: #ccc;
+        padding: 8px 16px;
+      }
+
+      .webname {
+        display: inline-block;
+      }
+
+      .footer-nav-items,
+      .main-nav-items,
+      .name-price {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+
+      .main-nav {
+        display: inline-block;
+        width: calc(100% - 250px);
+        text-align: right;
+      }
+
+      .main-nav-item {
+        display: inline-block;
+        margin: 0px 10px;
+      }
+
+      #about {
+        color: #001aff;
+        text-decoration: none;
+      }
+
+      #mode {
+        color: #032900;
+        text-decoration: none;
+      }
+
+      .personalized {
+        border: 1px solid;
+        padding: 10px;
+      }
+
+      .main-menu {
+        padding: 30px 40px;
+      }
+
+      .main-menu-items {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+      }
+      .main-menu-item {
+        text-align: center;
+        background-color: #eee;
+        margin: 10px;
+        padding: 10px;
+        width: 30%;
+        height: 310px;
+        float: left;
+        position: relative;
+        border: 1px solid;
+      }
+      .main-menu-item img {
+        height: 250px;
+      }
+
+      .name-price {
+        text-align: left;
+      }
+
+      .name-price li {
+        display: inline-block;
+      }
+
+      .food-name {
+        width: 105px;
+      }
+
+      .food-price {
+        text-align: right;
+        width: calc(100% - 110px);
+      }
+
+      .personalized {
+        background-color: #eee;
+      }
+      #footer {
+        background-color: #ccc;
+        position: relative;
+        top: 80px;
+        padding: 10px;
+        height: 50px;
+      }
+
+      .footer-nav-item {
+        display: inline-block;
+      }
+      .footer-nav-item a {
+        text-decoration: none;
+        color: #001aff;
+      }
+
+      #list-location {
+        width: calc(100% - 100px);
+        text-align: right;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="main-header">
+      <h1 class="webname">Gülbahçe Burger</h1>
+      <nav class="main-nav">
+        <ul class="main-nav-items">
+          <li class="main-nav-item">
+            <a id="about" href="#">About Us</a>
+          </li>
+          <li class="main-nav-item">
+            <a id="mode" href="#">Switch to Light Mode</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="personalized">
+        <label for="name"
+          >Please enter your name for personalized experience:</label
+        >
+        <input type="text" id="name" style="border: 2px solid" />
+        <button id="submit-name" type="submit">Submit</button>
+      </section>
+      <section class="main-menu clearfix">
+        <ul class="main-menu-items">
+          <li class="main-menu-item">
+            <div class="food-content">
+              <img src="pictures/cheeseburger.jpg" alt="" />
+              <ul class="name-price">
+                <li class="food-name">Chessburger</li>
+                <li class="food-price">70 TL</li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu-item">
+            <div class="food-content">
+              <img src="pictures/onion_rings.jpg" alt="" />
+              <ul class="name-price">
+                <li class="food-name">Onion Rings</li>
+                <li class="food-price">30 TL</li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu-item">
+            <div class="food-content">
+              <img src="pictures/fries.jpg" alt="" />
+              <ul class="name-price">
+                <li class="food-name">French Fries</li>
+                <li class="food-price">25 TL</li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu-item">
+            <div class="food-content">
+              <img src="pictures/chicken_burger.jpg" alt="" />
+              <ul class="name-price">
+                <li class="food-name">Chicken Burger</li>
+                <li class="food-price">60 TL</li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu-item">
+            <div class="food-content">
+              <img src="pictures/fizzy_drink.jpg" alt="" />
+              <ul class="name-price">
+                <li class="food-name">Fizzy Drink</li>
+                <li class="food-price">20 TL</li>
+              </ul>
+            </div>
+          </li>
+          <li class="main-menu-item">
+            <div class="food-content">
+              <img src="pictures/water.jpg" alt="" />
+              <ul class="name-price">
+                <li class="food-name">Water</li>
+                <li class="food-price">10 TL</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer id="footer">
+      <nav class="footer-nav">
+        <ul class="footer-nav-items">
+          <li class="footer-nav-item">
+            <a id="contact-info" href="#">Contact Info</a>
+          </li>
+          <li id="list-location" class="footer-nav-item">
+            <a id="location" href="#">Location</a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+    <script src="scripts/my-style.js"></script>
+  </body>
+</html>
